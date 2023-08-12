@@ -1,0 +1,14 @@
+#searchmenu-menu li:nth-child(5) {display:none;}
+#searchmenu-menu li:nth-child(6) {display:none;}
+#searchmenu-menu li:nth-child(7) {display:none;}
+#searchmenu-menu li:nth-child(8) {display:none;}
+#searchmenu-menu li:nth-child(9) {display:none;}
+#searchmenu-menu li:nth-child(10) {display:none;}
+#searchmenu-menu li:nth-child(11) {display:none;}
+
+#searchmenu .proplist li:last-child {
+display: none;
+}
+#searchmenu .proplist li:nth-last-child(2) {
+display: none;
+}

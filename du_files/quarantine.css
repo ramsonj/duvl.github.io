@@ -1,0 +1,75 @@
+
+#quarantinecontentframe {
+	border: 0;
+	border-radius: 4px;
+width: 100%;
+height: 100%;
+}
+
+#mainscreen .readtext {
+	margin: 0 auto;
+}
+
+#taskmenu a.button-quarantine::before {
+   content: "\f188";
+}
+
+.iframebox.quarantine_content {
+    overflow: auto;
+}
+
+.records-table {
+  font-size: 11px;
+}
+
+.records-table tbody .released td {
+  background: #fee;
+}
+
+.records-table tbody .hover td {
+  background: #eee;
+}
+
+.records-table .narrow {
+  width: 55px;
+}
+
+.records-table .msgdate {
+  font-weight: bold;
+  padding: 5px;
+}
+
+.records-table .msgtime {
+  width: 50px;
+  font-size: 90%;
+  color: #666;
+}
+
+.records-table .msglevel {
+  font-size: 90%;
+  color: #c33;
+  text-align: right;
+}
+
+.records-table .action {
+  text-align: right;
+  width: 65px;
+}
+
+.records-table .msgdatetime {
+  width: 120px;
+}
+
+.records-table .msgdatime td {
+  font-size: 80%;
+}
+
+#quarantine-toolbar {
+  font-size: 120%;
+  padding: 10px 5px;
+}
+
+#quarantine-footer {
+  font-size: 120%;
+  padding: 10px;
+}
